@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Grunt插件之LiveReload 实现页面自动刷新，所见即所得编辑</title>
+</head>
+<body>
+	<input type="button" value="按钮1">
+	<input type="button" value="按钮2">
+	<input type="button" value="按钮3">
+</body>
+</html>
+<script src="js/message.js"></script>
+<script>
+	var btn1 = document.getElementsByTagName('input')[0];
+	msgConfig = {
+		color:'red'
+	}
+	// 使用
+	btn1.onclick = function(){
+		message.show("点击了第一个按钮");
+	}
+</script>
